@@ -16,7 +16,6 @@ const Menu = () => {
       title: 'Project', 
       content: (
         <div>
-          <h2 id='pr_title'>Some of my Projects</h2>
           <div className="projects">
             <Project
               name="Weather App"
@@ -57,10 +56,38 @@ const Menu = () => {
       title: 'About', 
       content: (
         <div>
-          <h2>Sobre Mí</h2>
-          <p>Aquí va tu información personal y profesional:</p>
-          <p>Detalles sobre tu experiencia, habilidades y logros.</p>
-          {/* Añade más información según sea necesario */}
+          <h2 className='t2'>Computer engineering student</h2>
+          <p className='textaboutme'>I am a third-year student at the Faculty of Engineering, University of Buenos Aires (FIUBA), looking for opportunities to gain hands-on experience in the tech field. I am passionate about programming, proactive, and always eager to learn new technologies and improve my skills. I thrive in collaborative environments and am committed to continuous growth, whether in software development or other technology-related roles.
+          </p>
+          <h2 className='t2'>Knowledge</h2>
+          <p className='textaboutme'> I have a strong foundation in structured, object-oriented, and functional programming. I also have experience in both front-end and back-end development, including working with SQL databases and connecting these systems. My university projects have provided me with valuable teamwork and collaborative development skills.
+          </p>
+          <h2 className='t2'>Technologies</h2>
+          <p className='textaboutme'>
+          I am experienced in Java, JavaFX, C, JavaScript, HTML, CSS, Python, Assembly, and SQL databases. Currently, I am learning React and planning to explore Node.js.
+          </p>
+          <h2 className='t2'>Experience</h2>
+          <p className='textaboutme'>
+            Movistar Argentina 2022 - I worked on the sales sector, providing customer service and support. I also collaborated with the technical team to solve problems and improve the service.
+          </p>
+
+        </div>
+      )
+    },
+    { 
+      id: 'contact', 
+      title: 'Contact', 
+      content: (
+        <div id='contact'>
+          <h2 className='t2'>Contact Me</h2>
+          <ul className='list'>
+            <label for='email' >Email</label>
+            <li id='email'>basterrasebastian@gmail.com</li>
+            <label for='phone'>Phone</label>
+            <li id='phone'> +54 11 5038 1538</li>
+            <label for='github'>GitHub</label>
+            <li id='github'><a href="https://github.com/Cbonchan" target="_blank" rel="noopener noreferrer">Cbonchan</a></li>
+          </ul>
         </div>
       )
     }
@@ -74,6 +101,9 @@ const Menu = () => {
       </button>
       <button onClick={() => goToSection(1)} className="carousel-button next">
         About Me
+      </button>
+      <button onClick={() => goToSection(2)} className="carousel-button next">
+        Contact
       </button>
       <div className="carousel-content">
         {sections[currentIndex].content}

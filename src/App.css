@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 .App {
   text-align: center;
 }
@@ -37,11 +38,36 @@ ul {
   padding: 1em;
 }
 
-h1 {
-  color: white;
-  font-size: 2em;
+.title{
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  width: 100%; /* Abarca todo el ancho del contenedor main */
+  background-color: #675eee; /* Color de fondo */
+  padding: 1em 0em 2em 0em;
+  border-bottom: 2px solid #000;
+  margin-bottom: 1em;
+  background: linear-gradient(to top, #675eee, rgb(181, 186, 255));
+  text-align: left;
 }
 
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  text-align: left; 
+  margin-left: 1em;
+}
+
+.title h2 {
+  margin-left: 1em;
+}
+
+.t2{
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  text-align: center; 
+  text-decoration: underline;
+
+}
 button {
   background-color: rgba(0, 0, 0, 0.37);
   border: none;
@@ -51,6 +77,8 @@ button {
   display: inline-block;
   padding: 1em;
   cursor: pointer;
+  margin-bottom: 1em;
+  
 }
 
 button:hover {
@@ -129,6 +157,43 @@ li button:active {
   background-color: #0056b3;
 }
 
+.textaboutme{
+
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2em 5em 0em 5em;
+}
+
+@media (max-width: 1200px) {
+  .textaboutme {
+    font-size: 1.2em; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+    margin: 1em 2em; /* Ajusta los márgenes para pantallas pequeñas */
+  }
+}
+
+#contact{
+  text-align: center;
+  margin: 2em 5em 0em 5em;
+  background-color: rgba(43, 43, 43, 0.212);
+  border-radius: 20px;
+}
+
+.list {
+  display: block;
+  padding-left: 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+label{
+  font-size: 1.5em;
+  color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  
+}
 
 .projects{
   display: flex;
