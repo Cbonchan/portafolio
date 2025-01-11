@@ -87,6 +87,8 @@ const Menu = () => {
             <li id='phone'> +54 11 5038 1538</li>
             <label for='github'>GitHub</label>
             <li id='github'><a href="https://github.com/Cbonchan" target="_blank" rel="noopener noreferrer">Cbonchan</a></li>
+            <label for='linkedin'>LinkedIn</label>
+            <li id='linkedin'><a href="https://www.linkedin.com/in/sebasti%C3%A1n-nahuel-basterra-1072b4206/" target="_blank" rel="noopener noreferrer">Sebastian Basterra</a></li>
           </ul>
         </div>
       )
